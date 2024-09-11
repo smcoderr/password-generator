@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Password Generator | Secure Passwords</title>
+
+    <!-- Meta Description for SEO -->
+    <meta
+      name="description"
+      content="Generate secure, random passwords with our easy-to-use password generator tool. Ensure strong protection for your accounts with just one click!"
+    />
+    <meta
+      name="keywords"
+      content="random password generator, secure password, strong password, password security"
+    />
+    <meta name="author" content="Sourav M" />
+
+    <!-- Open Graph (OG) for better social sharing -->
+    <meta
+      property="og:title"
+      content="Random Password Generator | Secure Passwords"
+    />
+    <meta
+      property="og:description"
+      content="Generate secure, random passwords with our easy-to-use password generator tool."
+    />
+    <meta property="og:image" content="./img/jsimg.webp" />
+    <meta property="og:url" content="https://example.com" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card for social sharing -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Random Password Generator | Secure Passwords"
+    />
+    <meta
+      name="twitter:description"
+      content="Generate secure, random passwords with our easy-to-use password generator tool."
+    />
+    <meta name="twitter:image" content="./img/jsimg.webp" />
+
+    <!-- Canonical Link -->
+    <link rel="canonical" href="https://example.com" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="./img/logo.ico" type="image/png" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Random Password Generator",
+        "url": "https://example.com",
+        "description": "Generate secure, random passwords with our easy-to-use password generator tool.",
+        "author": {
+          "@type": "Person",
+          "name": "Sourav M"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        Generate a <br />
+        <span>Random Password</span>
+      </h1>
+      <div class="display">
+        <label for="password" class="visually-hidden"></label>
+        <input type="text" id="password" placeholder="Password" readonly />
+        <img
+          src="./img/copy.png"
+          class="copy-img"
+          onclick="copyPassword()"
+          alt="Copy password"
+        />
+      </div>
+      <button onclick="generatePassword()">
+        <img src="./img/bolt.png" alt="" /> Generate Password
+      </button>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
